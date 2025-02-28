@@ -20,20 +20,6 @@ namespace DungeonJournal
 
             this.logo.icon_name = Config.APP_ID;
             this.setup_recents();
-            ColumnWidget column_widget = new ColumnWidget();
-            column_widget.append(new Gtk.Label("h,fdfdsi"));
-            column_widget.append(new Gtk.Label("hi"));
-            column_widget.append(new Gtk.Label("hi"));
-            column_widget.append(new Gtk.Label("hi"));
-            column_widget.append(new Gtk.Label("hiasdas"));
-            column_widget.append(new Gtk.Label("hi"));
-            column_widget.append(new Gtk.Label("hi"));
-            column_widget.append(new Gtk.Label("hi"));
-            column_widget.append(new Gtk.Label("hi"));
-            Adw.Bin frame = new Adw.Bin();
-            frame.child = column_widget;
-            frame.add_css_class("frame");
-            this.recents_box.append(frame);
         }
 /*
         public override void present()

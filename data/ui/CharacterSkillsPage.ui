@@ -12,10 +12,11 @@
         <property name="hscrollbar_policy">never</property>
         <child>
                   <object class="GtkBox" id="column_widget">
-                    <!--<property name="orientation">vertical</property>-->
-                    <!--<property name="spacing">12</property>-->
+                    <property name="width-request">370</property>
+                    <property name="margin-top">18</property>
                           <child>
                                   <object class="GtkBox">
+                                          <property name="spacing">12</property>
                                           <property name="orientation">vertical</property>
                                           <property name="width-request">350</property>
                     <child>
@@ -39,6 +40,7 @@
                           </child>
                           <child>
                                   <object class="GtkBox">
+                                          <property name="spacing">12</property>
                                           <property name="orientation">vertical</property>
                                           <property name="width-request">350</property>
                     <child>
@@ -62,6 +64,7 @@
                           </child>
                           <child>
                                   <object class="GtkBox">
+                                          <property name="spacing">12</property>
                                           <property name="orientation">vertical</property>
                                           <property name="width-request">350</property>
 
@@ -86,6 +89,7 @@
                           </child>
                           <child>
                                   <object class="GtkBox">
+                                          <property name="spacing">12</property>
                                           <property name="orientation">vertical</property>
                                           <property name="width-request">350</property>
 
@@ -111,6 +115,7 @@
                           </child>
                           <child>
                                   <object class="GtkBox">
+                                          <property name="spacing">12</property>
                                           <property name="orientation">vertical</property>
                                           <property name="width-request">350</property>
 
@@ -136,6 +141,7 @@
                           </child>
                           <child>
                                   <object class="GtkBox">
+                                          <property name="spacing">12</property>
                                           <property name="orientation">vertical</property>
                                           <property name="width-request">350</property>
 

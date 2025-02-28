@@ -20,7 +20,6 @@ namespace DungeonJournal
                                      out int natural_baseline) {
 
             if (orientation == Gtk.Orientation.HORIZONTAL) {
-                print("huuuu oopsi hor\n");
                 minimum = for_size;
                 natural = for_size;
                 minimum_baseline = -1;
@@ -37,7 +36,6 @@ namespace DungeonJournal
             }
 
             if (child_natural_width == 0) {
-                print("huuuu\n");
                 minimum = 0;
                 natural = 0;
                 minimum_baseline = -1;
@@ -45,11 +43,7 @@ namespace DungeonJournal
                 return;
             }
 
-            int column_count = (int) (for_size / (child_natural_width + this.spacing));
-            if (column_count == 0) {
-                print("to small\n");
-                column_count = 1;
-            }
+            int column_count = int.max((int) (for_size / (child_natural_width + this.spacing)), 1);
 
             ArrayList<int> columns = new ArrayList<int>();
             for (int i = 0; i < column_count; i++) {
@@ -76,7 +70,6 @@ namespace DungeonJournal
                 }
             }
 
-            print("returning "+column_count.to_string()+"columns and h "+columns[max].to_string()+"\n");
             minimum = columns[max];
             natural = columns[max];
             minimum_baseline = -1;
@@ -84,7 +77,6 @@ namespace DungeonJournal
         }
 
         protected override void allocate (Gtk.Widget widget, int width, int height, int baseline) {
-            print("hallo!\n");
             int child_width = 0;
             for (Gtk.Widget child = widget.get_first_child(); child != null; child = child.get_next_sibling()) {
                 Gtk.Requisition child_req;
@@ -93,18 +85,23 @@ namespace DungeonJournal
             }
 
             if (child_width == 0) {
-                print("huuuu\n");
                 return;
             }
 
-            int column_count = (int) (width / (child_width + this.spacing));
-            int content_width = child_width * column_count;
-            int offset = (width - content_width) / 2;
+            int column_count = int.max((int) (width / (child_width + this.spacing)), 1);
+
+            int column_width = width / column_count - this.spacing * column_count;
+            if (column_count == 1) {
+                column_width = int.min(width - this.spacing * 2, child_width);
+            }
+
+            int content_width = (column_width + this.spacing) * column_count;
+            int offset = (width - content_width) / 2 + this.spacing / 2;
+
             ArrayList<int> columns = new ArrayList<int>();
             for (int i = 0; i < column_count; i++) {
                 columns.add(0);
             }
-            print("making " + column_count.to_string() + " columns\n");
 
             for (Gtk.Widget child = widget.get_first_child(); child != null; child = child.get_next_sibling()) {
                 Gtk.Requisition child_req;
@@ -117,9 +114,7 @@ namespace DungeonJournal
                     }
                 }
 
-                print("child at y = "+columns[min].to_string()+"pos, column "+min.to_string()+"\n");
-
-                child.allocate_size ({ offset + content_width / column_count * min + this.spacing * min, columns[min], child_width, child_req.height }, -1);
+                child.allocate_size ({ offset + content_width / column_count * min, columns[min], column_width, child_req.height }, -1);
                 columns[min] += child_req.height + spacing;
             }
         }
