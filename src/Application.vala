@@ -70,7 +70,7 @@ namespace DungeonJournal
             string[] authors =
             {
                 "Tryton Van Meer <trytonvanmeer@gmail.com>",
-                "qwertzuiopy <michael@cmbm.de>",
+                "Luna <cat@hummdudel.de>",
                 "Azakidev <zazaguichi@outlook.com>"
             };
 
