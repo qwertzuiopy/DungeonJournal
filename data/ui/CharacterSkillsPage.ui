@@ -11,163 +11,155 @@
         <property name="vexpand">True</property>
         <property name="hscrollbar_policy">never</property>
         <child>
-                  <object class="GtkBox" id="column_widget">
-                    <property name="width-request">370</property>
-                    <property name="margin-top">18</property>
-                          <child>
-                                  <object class="GtkBox">
-                                          <property name="spacing">12</property>
-                                          <property name="orientation">vertical</property>
-                                          <property name="width-request">350</property>
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="halign">start</property>
-                        <property name="label" translatable="yes">Strength</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkListBox" id="strength_listbox">
-                        <style>
-                          <class name="boxed-list"/>
-                        </style>
-                        <property name="selection_mode">none</property>
-                      </object>
-                    </child>
-                                  </object>
-                          </child>
-                          <child>
-                                  <object class="GtkBox">
-                                          <property name="spacing">12</property>
-                                          <property name="orientation">vertical</property>
-                                          <property name="width-request">350</property>
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="halign">start</property>
-                        <property name="label" translatable="yes">Dexterity</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkListBox" id="dexterity_listbox">
-                        <style>
-                          <class name="boxed-list"/>
-                        </style>
-                        <property name="selection_mode">none</property>
-                      </object>
-                    </child>
-                                  </object>
-                          </child>
-                          <child>
-                                  <object class="GtkBox">
-                                          <property name="spacing">12</property>
-                                          <property name="orientation">vertical</property>
-                                          <property name="width-request">350</property>
-
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="halign">start</property>
-                        <property name="label" translatable="yes">Constitution</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkListBox" id="constitution_listbox">
-                        <style>
-                          <class name="boxed-list"/>
-                        </style>
-                        <property name="selection_mode">none</property>
-                      </object>
-                    </child>
-                                  </object>
-                          </child>
-                          <child>
-                                  <object class="GtkBox">
-                                          <property name="spacing">12</property>
-                                          <property name="orientation">vertical</property>
-                                          <property name="width-request">350</property>
-
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="halign">start</property>
-                        <property name="label" translatable="yes">Intelligence</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkListBox" id="intelligence_listbox">
-                        <style>
-                          <class name="boxed-list"/>
-                        </style>
-                        <property name="selection_mode">none</property>
-                      </object>
-                    </child>
-
-                                  </object>
-                          </child>
-                          <child>
-                                  <object class="GtkBox">
-                                          <property name="spacing">12</property>
-                                          <property name="orientation">vertical</property>
-                                          <property name="width-request">350</property>
-
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="halign">start</property>
-                        <property name="label" translatable="yes">Wisdom</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkListBox" id="wisdom_listbox">
-                        <style>
-                          <class name="boxed-list"/>
-                        </style>
-                        <property name="selection_mode">none</property>
-                      </object>
-                    </child>
-
-                                  </object>
-                          </child>
-                          <child>
-                                  <object class="GtkBox">
-                                          <property name="spacing">12</property>
-                                          <property name="orientation">vertical</property>
-                                          <property name="width-request">350</property>
-
-                    <child>
-                      <object class="GtkLabel">
-                        <property name="halign">start</property>
-                        <property name="label" translatable="yes">Charisma</property>
-                        <attributes>
-                          <attribute name="weight" value="bold"/>
-                        </attributes>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="GtkListBox" id="charisma_listbox">
-                        <style>
-                          <class name="boxed-list"/>
-                        </style>
-                        <property name="selection_mode">none</property>
-                      </object>
-                    </child>
-
-                                  </object>
-                          </child>
-
+          <object class="GtkBox" id="column_widget">
+            <property name="width-request">370</property>
+            <property name="margin-top">18</property>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <property name="orientation">vertical</property>
+                <property name="width-request">350</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Strength</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
                   </object>
                 </child>
+                <child>
+                  <object class="GtkListBox" id="strength_listbox">
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+                    <property name="selection_mode">none</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <property name="orientation">vertical</property>
+                <property name="width-request">350</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Dexterity</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBox" id="dexterity_listbox">
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+                    <property name="selection_mode">none</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <property name="orientation">vertical</property>
+                <property name="width-request">350</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Constitution</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBox" id="constitution_listbox">
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+                    <property name="selection_mode">none</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <property name="orientation">vertical</property>
+                <property name="width-request">350</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Intelligence</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBox" id="intelligence_listbox">
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+                    <property name="selection_mode">none</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <property name="orientation">vertical</property>
+                <property name="width-request">350</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Wisdom</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBox" id="wisdom_listbox">
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+                    <property name="selection_mode">none</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="spacing">12</property>
+                <property name="orientation">vertical</property>
+                <property name="width-request">350</property>
+                <child>
+                  <object class="GtkLabel">
+                    <property name="halign">start</property>
+                    <property name="label" translatable="yes">Charisma</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkListBox" id="charisma_listbox">
+                    <style>
+                      <class name="boxed-list"/>
+                    </style>
+                    <property name="selection_mode">none</property>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
       </object>
     </child>
   </template>
