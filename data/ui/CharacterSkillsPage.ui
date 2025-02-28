@@ -11,18 +11,13 @@
         <property name="vexpand">True</property>
         <property name="hscrollbar_policy">never</property>
         <child>
-          <object class="GtkViewport">
-            <child>
-              <object class="AdwClamp">
-                <property name="margin_start">12</property>
-                <property name="margin_end">12</property>
-                <property name="margin_top">32</property>
-                <property name="margin_bottom">32</property>
-                <property name="maximum_size">650</property>
-                <child>
-                  <object class="GtkBox">
-                    <property name="orientation">vertical</property>
-                    <property name="spacing">12</property>
+                  <object class="GtkBox" id="column_widget">
+                    <!--<property name="orientation">vertical</property>-->
+                    <!--<property name="spacing">12</property>-->
+                          <child>
+                                  <object class="GtkBox">
+                                          <property name="orientation">vertical</property>
+                                          <property name="width-request">350</property>
                     <child>
                       <object class="GtkLabel">
                         <property name="halign">start</property>
@@ -40,10 +35,15 @@
                         <property name="selection_mode">none</property>
                       </object>
                     </child>
+                                  </object>
+                          </child>
+                          <child>
+                                  <object class="GtkBox">
+                                          <property name="orientation">vertical</property>
+                                          <property name="width-request">350</property>
                     <child>
                       <object class="GtkLabel">
                         <property name="halign">start</property>
-                        <property name="margin_top">18</property>
                         <property name="label" translatable="yes">Dexterity</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
@@ -58,10 +58,16 @@
                         <property name="selection_mode">none</property>
                       </object>
                     </child>
+                                  </object>
+                          </child>
+                          <child>
+                                  <object class="GtkBox">
+                                          <property name="orientation">vertical</property>
+                                          <property name="width-request">350</property>
+
                     <child>
                       <object class="GtkLabel">
                         <property name="halign">start</property>
-                        <property name="margin_top">18</property>
                         <property name="label" translatable="yes">Constitution</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
@@ -76,10 +82,16 @@
                         <property name="selection_mode">none</property>
                       </object>
                     </child>
+                                  </object>
+                          </child>
+                          <child>
+                                  <object class="GtkBox">
+                                          <property name="orientation">vertical</property>
+                                          <property name="width-request">350</property>
+
                     <child>
                       <object class="GtkLabel">
                         <property name="halign">start</property>
-                        <property name="margin_top">18</property>
                         <property name="label" translatable="yes">Intelligence</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
@@ -94,10 +106,17 @@
                         <property name="selection_mode">none</property>
                       </object>
                     </child>
+
+                                  </object>
+                          </child>
+                          <child>
+                                  <object class="GtkBox">
+                                          <property name="orientation">vertical</property>
+                                          <property name="width-request">350</property>
+
                     <child>
                       <object class="GtkLabel">
                         <property name="halign">start</property>
-                        <property name="margin_top">18</property>
                         <property name="label" translatable="yes">Wisdom</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
@@ -112,10 +131,17 @@
                         <property name="selection_mode">none</property>
                       </object>
                     </child>
+
+                                  </object>
+                          </child>
+                          <child>
+                                  <object class="GtkBox">
+                                          <property name="orientation">vertical</property>
+                                          <property name="width-request">350</property>
+
                     <child>
                       <object class="GtkLabel">
                         <property name="halign">start</property>
-                        <property name="margin_top">18</property>
                         <property name="label" translatable="yes">Charisma</property>
                         <attributes>
                           <attribute name="weight" value="bold"/>
@@ -130,12 +156,12 @@
                         <property name="selection_mode">none</property>
                       </object>
                     </child>
+
+                                  </object>
+                          </child>
+
                   </object>
                 </child>
-              </object>
-            </child>
-          </object>
-        </child>
       </object>
     </child>
   </template>

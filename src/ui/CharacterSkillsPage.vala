@@ -6,6 +6,8 @@ namespace DungeonJournal
     [GtkTemplate (ui = "/io/github/trytonvanmeer/DungeonJournal/ui/CharacterSkillsPage.ui")]
     public class CharacterSkillsPage : Box
     {
+        [GtkChild] protected unowned Box column_widget;
+
         [GtkChild] protected unowned ListBox strength_listbox;
         [GtkChild] protected unowned ListBox dexterity_listbox;
         [GtkChild] protected unowned ListBox constitution_listbox;
@@ -37,6 +39,8 @@ namespace DungeonJournal
         public CharacterSkillsPage()
         {
             Object();
+
+            this.column_widget.layout_manager = new ColumnLayout();
 
             this.abilities = new HashMap<Ability, ListBox>();
 

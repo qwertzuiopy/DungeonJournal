@@ -31,6 +31,7 @@ sources = [
   'ui/CharacterFeatRow.vala',
   'ui/CharacterAttackRow.vala',
   'ui/CharacterItemRow.vala',
+  'ui/ColumnLayout.vala',
 ]
 
 c_args = [
